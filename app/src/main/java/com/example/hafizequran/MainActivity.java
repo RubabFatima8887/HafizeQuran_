@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-              //  Intent intent = new Intent(MainActivity.this, AddRecordActivity.class);
-              //  startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, AddRecord.class);
+                startActivity(intent);
             }
         });
 

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <!-- Button and EditText Set 1 -->
+    <LinearLayout
+        android:id="@+id/buttonSet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Student Id" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Id"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Button and EditText Set 2 -->
+    <LinearLayout
+        android:id="@+id/buttonSet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Sabaq_StartingAyat" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Starting Ayat"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Button and EditText Set 3 -->
+    <LinearLayout
+        android:id="@+id/buttonSet3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SAabaq_EndingAyat" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint = " Enter Ending Ayat"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Button and EditText Set 4 -->
+    <LinearLayout
+        android:id="@+id/buttonSet4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Saqbqi" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Sabqi"
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+
+    <!-- Button and EditText Set 4 -->
+    <LinearLayout
+        android:id="@+id/buttonSet5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Manzil" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Manzil"
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+    <!-- Button and EditText Set 1 -->
+    <LinearLayout
+        android:id="@+id/buttonSet6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Date"
+            android:padding="8dp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Record" />
+
+</LinearLayout>

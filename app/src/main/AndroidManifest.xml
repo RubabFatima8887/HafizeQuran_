@@ -12,6 +12,21 @@
         android:theme="@style/Theme.HafizeQuran"
         tools:targetApi="31">
         <activity
+            android:name=".ViewRecord"
+            android:exported="false" />
+        <activity
+            android:name=".MyRecyclerViewAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRecord"
+            android:exported="false" />
+        <activity
+            android:name=".AddRecord"
+            android:exported="false" />
+        <activity
             android:name=".DatabaseHelper"
             android:exported="false" />
         <activity
