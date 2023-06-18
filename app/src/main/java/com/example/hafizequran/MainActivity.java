@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String url = "https://github.com/UmairHafeez0/HifzApp";
+                String url = "https://github.com/RubabFatima8887/HafizeQuran_";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
             }
