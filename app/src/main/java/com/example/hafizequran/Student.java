@@ -11,6 +11,10 @@ public class Student {
         //  this.age = age;
     }
 
+    public Student() {
+
+    }
+
     public String getId() {
         return rollNo;
     }

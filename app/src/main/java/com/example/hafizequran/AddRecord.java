@@ -38,8 +38,8 @@ public class AddRecord extends AppCompatActivity {
                 String sabqi = etSabqi.getText().toString().trim();
                 String mazil = etMazil.getText().toString().trim();
                 String date = etDate.getText().toString().trim();
-
-                StudentRecord studentRecord = new StudentRecord("John Doe", studentId, Integer.parseInt(startingAyat),
+                Student s  = new Student();
+                StudentRecord studentRecord = new StudentRecord(s.getName(), studentId, Integer.parseInt(startingAyat),
                         Integer.parseInt(endingAyat), Integer.parseInt(sabqi), Integer.parseInt(mazil), date);
 
                 DatabaseHelper dbHelper = new DatabaseHelper(AddRecord.this);
