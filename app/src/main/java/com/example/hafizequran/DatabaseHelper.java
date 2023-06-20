@@ -101,7 +101,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             if (newRowId != -1) {
                 Toast.makeText(context, "Data inserted successfully", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(context, "Failed to insert data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Data is not Inserted", Toast.LENGTH_SHORT).show();
             }
 
         }
@@ -115,7 +115,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         if (!isStudentExists(student.getRollNo(),context)) {
 
-            Toast.makeText(context, "No student with Roll No: " + student.getRollNo() + " exists.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Roll no Doesn't Exist " + student.getRollNo() + " exists.", Toast.LENGTH_SHORT).show();
         } else {
             ContentValues values = new ContentValues();
             values.put(COLUMN_NAME, student.getName());

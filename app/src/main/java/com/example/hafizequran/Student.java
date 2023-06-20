@@ -25,6 +25,9 @@ public class Student {
     public void setId(String id) {
         this.rollNo = id;
     }
+public void setName(String Name){
+        this.name = Name;
+}
 
     @Override
     public String toString() {
