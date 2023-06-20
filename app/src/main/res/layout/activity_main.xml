@@ -4,13 +4,14 @@
     android:layout_height="match_parent">
 
     <!-- Header TextView -->
-    <TextView
+    <!-- <TextView
         android:id="@+id/headerTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Header Text"
         android:textSize="24sp" />
+        -->
 
     <!-- Centered Buttons -->
     <LinearLayout

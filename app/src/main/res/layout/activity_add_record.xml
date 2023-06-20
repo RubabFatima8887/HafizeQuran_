@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:gravity="center">
 
-
     <!-- Button and EditText Set 1 -->
     <LinearLayout
         android:id="@+id/buttonSet1"
@@ -18,12 +17,13 @@
             android:id="@+id/button1"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:background="@color/favcolor"
             android:text="Student Id" />
 
         <EditText
             android:id="@+id/editText1"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:hint="Enter Id"
             android:padding="8dp" />
 
@@ -39,14 +39,14 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="200dp"
+            android:layout_width="219dp"
             android:layout_height="wrap_content"
             android:text="Sabaq_StartingAyat" />
 
         <EditText
             android:id="@+id/editText2"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:hint="Enter Starting Ayat"
             android:padding="8dp" />
 
@@ -69,8 +69,8 @@
         <EditText
             android:id="@+id/editText3"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint = " Enter Ending Ayat"
+            android:layout_height="40dp"
+            android:hint="Enter Ending Ayat"
             android:padding="8dp" />
 
     </LinearLayout>
@@ -92,14 +92,13 @@
         <EditText
             android:id="@+id/editText4"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:hint="Enter Sabqi"
             android:padding="8dp" />
 
-
     </LinearLayout>
 
-    <!-- Button and EditText Set 4 -->
+    <!-- Button and EditText Set 5 -->
     <LinearLayout
         android:id="@+id/buttonSet5"
         android:layout_width="wrap_content"
@@ -116,13 +115,13 @@
         <EditText
             android:id="@+id/editText5"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:hint="Enter Manzil"
             android:padding="8dp" />
 
-
     </LinearLayout>
-    <!-- Button and EditText Set 1 -->
+
+    <!-- Button and EditText Set 6 -->
     <LinearLayout
         android:id="@+id/buttonSet6"
         android:layout_width="wrap_content"
@@ -139,11 +138,12 @@
         <EditText
             android:id="@+id/editText6"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:hint="Enter Date"
             android:padding="8dp" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/button7"
         android:layout_width="200dp"
