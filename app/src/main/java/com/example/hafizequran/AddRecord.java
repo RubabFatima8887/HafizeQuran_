@@ -32,17 +32,17 @@ public class AddRecord extends AppCompatActivity {
         AddRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DatabaseHelper dbHelper = new DatabaseHelper(AddRecord.this);
                 String studentId = etStudentId.getText().toString().trim();
                 String startingAyat = etStartingAyat.getText().toString().trim();
                 String endingAyat = etEndingAyat.getText().toString().trim();
                 String sabqi = etSabqi.getText().toString().trim();
                 String mazil = etMazil.getText().toString().trim();
                 String date = etDate.getText().toString().trim();
-                Student s  = new Student();
-                StudentRecord studentRecord = new StudentRecord(s.getName(), studentId, Integer.parseInt(startingAyat),
-                        Integer.parseInt(endingAyat), Integer.parseInt(sabqi), Integer.parseInt(mazil), date);
 
-                DatabaseHelper dbHelper = new DatabaseHelper(AddRecord.this);
+                String name = dbHelper.getNameByRollNumber(studentId,AddRecord.this);
+                StudentRecord studentRecord = new StudentRecord(name, studentId, Integer.parseInt(startingAyat),
+                        Integer.parseInt(endingAyat), Integer.parseInt(sabqi), Integer.parseInt(mazil), date);
 
                 dbHelper.insertStudent(studentRecord,AddRecord.this);
                 Toast.makeText(AddRecord.this, "Record added successfully", Toast.LENGTH_SHORT).show();

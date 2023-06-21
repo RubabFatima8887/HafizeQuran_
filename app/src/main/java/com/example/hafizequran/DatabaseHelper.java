@@ -174,6 +174,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return students;
     }
+    public String getNameByRollNumber(String rollNumber, Context context) {
+        String name = ""; // Default value if the name is not found
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String[] projection = {COLUMN_NAME};
+        String selection = COLUMN_ROLLNO + " = ?";
+        String[] selectionArgs = {rollNumber};
+
+        Cursor cursor = db.query(TABLE_NAME2, projection, selection, selectionArgs, null, null, null);
+
+        if (cursor.moveToFirst()) {
+            name = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME));
+        }
+
+        cursor.close();
+        db.close();
+
+        return name;
+    }
     public List<StudentRecord> selectAllStudents() {
         List<StudentRecord> students = new ArrayList<>();
 
