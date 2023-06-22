@@ -25,12 +25,21 @@ public class MainActivity extends AppCompatActivity {
         Button AddRecord = findViewById(R.id.button2);
         Button Search= findViewById(R.id.button3);
         Button Git = findViewById(R.id.bottomRightButton);
+        Button delete = findViewById(R.id.button4);
 
         AddStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, AddStudent.class);
+                startActivity(intent);
+            }
+        });
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, DeleteStudent.class);
                 startActivity(intent);
             }
         });

@@ -231,5 +231,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return students;
     }
+    public void deleteStudentRecord(String id, Context context) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String selection = COLUMN_ID + " = ?";
+        String[] selectionArgs = {String.valueOf(id)};
+
+        int deletedRows = db.delete(TABLE_NAME2, selection, selectionArgs);
+
+
+        if (deletedRows > 0) {
+            Toast.makeText(context, "Record deleted successfully", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(context, "Failed to delete record", Toast.LENGTH_SHORT).show();
+        }
+
+        db.close();
+    }
 
 }
