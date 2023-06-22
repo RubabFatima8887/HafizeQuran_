@@ -16,14 +16,14 @@ public class DeleteStudent extends AppCompatActivity {
         setContentView(R.layout.activity_delete_student);
         EditText ed = findViewById(R.id.editTextRollNo);
         Button bt  = findViewById(R.id.buttondel);
-        String s = ed.getText().toString();
+        //String s = ed.getText().toString();
 
         DatabaseHelper db = new DatabaseHelper(DeleteStudent.this);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                db.deleteStudentRecord(s,DeleteStudent.this);
+                db.deleteStudentRecord(ed.getText().toString(),DeleteStudent.this);
 
             }
         });
